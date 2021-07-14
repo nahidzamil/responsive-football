@@ -118,3 +118,31 @@ footer{
 .copyright{
     font-size: 18px;
 }
+
+/* .....Responsive design for Mobile device.... */
+
+@media only screen and (max-width:688px) {
+    .banner-sec .middle-sec .highlights{
+        width: 100%;
+    }
+    .banner, .card-sec, .highlights-banner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner, .card-sec, .highlights-banner{
+        flex-direction: column;  
+    }
+}
+
+/* .....Responsive design for Tablet device.... */
+
+@media only screen and (max-width:992px) {
+    .banner-sec .middle-sec .highlights{
+        width: 100%;
+    }
+    .banner, .card-sec, .highlights-banner{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .banner, .card-sec, .highlights-banner{
+        flex-direction: column;  
+    }
+}
