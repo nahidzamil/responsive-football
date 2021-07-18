@@ -54,6 +54,7 @@ body{
 .card-sec{
     display: grid;
     grid-template-columns: repeat(3, 350px);
+    justify-content: center;
     row-gap: 27px;
 }
 .card{
@@ -84,15 +85,20 @@ body{
 
 .highlights{
     display: flex;
+    justify-content: center;
+    width: 1400px;
+    padding: 50px;
+    margin-left: 200px;
 }
-.highlights-banner .highlights-image img{
-    width: 567px;
-    margin-left: 717px;
+.highlight-banner{
+    width: 50%;
 }
-.highlights-text{
-    width: 469px;
-    margin-right: 66px;
+.highlights-image img{
+    margin-left: 100px;
+    width: 50%;
+
 }
+
 .highlights-text h2{
     font-size: 48px;
     line-height: 60px;
@@ -124,25 +130,15 @@ footer{
 @media only screen and (max-width:688px) {
     .banner-sec .middle-sec .highlights{
         width: 100%;
+   
     }
     .banner, .card-sec, .highlights-banner{
         grid-template-columns: repeat(1, 1fr);
+     
     }
     .banner, .card-sec, .highlights-banner{
         flex-direction: column;  
+        
     }
 }
 
-/* .....Responsive design for Tablet device.... */
-
-@media only screen and (max-width:992px) {
-    .banner-sec .middle-sec .highlights{
-        width: 100%;
-    }
-    .banner, .card-sec, .highlights-banner{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .banner, .card-sec, .highlights-banner{
-        flex-direction: column;  
-    }
-}
